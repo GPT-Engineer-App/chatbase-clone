@@ -9,6 +9,7 @@ import Pricing from "./pages/Pricing.jsx";
 import Contact from "./pages/Contact.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Chatbot from "./pages/Chatbot.jsx";
+import Voicebot from "./pages/Voicebot.jsx";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,10 @@ export const navItems = [
     title: "Chatbot",
     to: "/chatbot",
   },
+  {
+    title: "Voicebot",
+    to: "/voicebot",
+  },
 ];
 
 const App = () => {
@@ -53,6 +58,7 @@ const App = () => {
               <Route path="contact" element={<Contact />} />
               <Route path="signup" element={<SignUp />} />
               <Route path="chatbot" element={<Chatbot />} />
+              <Route path="voicebot" element={<Voicebot />} />
             </Route>
           </Routes>
         </Router>

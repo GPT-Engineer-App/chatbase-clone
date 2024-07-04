@@ -36,6 +36,10 @@ const navItems = [
     title: "Chatbot",
     to: "/chatbot",
   },
+  {
+    title: "Voicebot",
+    to: "/voicebot",
+  },
 ];
 
 const Layout = () => {
