@@ -42,6 +42,7 @@ const DesktopNav = () => (
         {item.title}
       </NavItem>
     ))}
+    <Button variant="outline" className="ml-auto">Sign Up</Button>
   </nav>
 );
 
@@ -67,6 +68,7 @@ const MobileNav = () => (
             {item.title}
           </NavItem>
         ))}
+        <Button variant="outline" className="mt-4">Sign Up</Button>
       </nav>
     </SheetContent>
   </Sheet>
