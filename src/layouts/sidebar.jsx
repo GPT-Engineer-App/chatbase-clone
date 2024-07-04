@@ -11,7 +11,28 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
-import { navItems } from "../App";
+const navItems = [
+  {
+    title: "Home",
+    to: "/",
+  },
+  {
+    title: "Features",
+    to: "/features",
+  },
+  {
+    title: "Pricing",
+    to: "/pricing",
+  },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+  {
+    title: "Sign Up",
+    to: "/signup",
+  },
+];
 
 const Layout = () => {
   return (
@@ -44,7 +65,6 @@ const Sidebar = () => (
         <nav className="grid items-start px-2 text-sm font-medium lg:px-4 gap-2">
           {navItems.map((item) => (
             <SidebarNavLink key={item.to} to={item.to}>
-              {item.icon}
               {item.title}
             </SidebarNavLink>
           ))}

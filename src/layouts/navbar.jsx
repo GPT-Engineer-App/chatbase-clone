@@ -11,7 +11,28 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
-import { navItems } from "../App";
+const navItems = [
+  {
+    title: "Home",
+    to: "/",
+  },
+  {
+    title: "Features",
+    to: "/features",
+  },
+  {
+    title: "Pricing",
+    to: "/pricing",
+  },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+  {
+    title: "Sign Up",
+    to: "/signup",
+  },
+];
 
 const Layout = () => {
   return (
@@ -42,7 +63,7 @@ const DesktopNav = () => (
         {item.title}
       </NavItem>
     ))}
-    <Button variant="outline" className="ml-auto">Sign Up</Button>
+    
   </nav>
 );
 
@@ -68,7 +89,7 @@ const MobileNav = () => (
             {item.title}
           </NavItem>
         ))}
-        <Button variant="outline" className="mt-4">Sign Up</Button>
+        
       </nav>
     </SheetContent>
   </Sheet>

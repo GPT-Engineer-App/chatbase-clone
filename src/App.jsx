@@ -7,6 +7,7 @@ import Index from "./pages/Index.jsx";
 import Features from "./pages/Features.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Contact from "./pages/Contact.jsx";
+import SignUp from "./pages/SignUp.jsx";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,10 @@ export const navItems = [
     title: "Contact",
     to: "/contact",
   },
+  {
+    title: "Sign Up",
+    to: "/signup",
+  },
 ];
 
 const App = () => {
@@ -41,6 +46,7 @@ const App = () => {
               <Route path="features" element={<Features />} />
               <Route path="pricing" element={<Pricing />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="signup" element={<SignUp />} />
             </Route>
           </Routes>
         </Router>
