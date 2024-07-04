@@ -30,6 +30,14 @@ const navItems = [
     title: "Contact",
     to: "/contact",
   },
+  {
+    title: "Sign Up",
+    to: "/signup",
+  },
+  {
+    title: "Chatbot",
+    to: "/chatbot",
+  },
 ];
 
 const Layout = () => {
